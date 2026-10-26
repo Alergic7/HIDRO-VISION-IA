@@ -1,9 +1,39 @@
 {
   "files": [
     {
+      "path": "ai_reports.py",
+      "bytes": 16795,
+      "sha256": "459408a82ef9c33e96a933203f849eb99084a6b58353cd10b1c1724a078bfdbc"
+    },
+    {
+      "path": "configure_integrations.py",
+      "bytes": 1639,
+      "sha256": "fe73893469ab5dc349b34af41ec8e7046c86d8c560cb5cc51fdb21f0fb3b61a8"
+    },
+    {
+      "path": "CONFIGURAR_IA_MAKE.cmd",
+      "bytes": 192,
+      "sha256": "f71f5f0875409ed7359731b979c1ffce3162eada55984a675103058edaa0d0b8"
+    },
+    {
+      "path": "INTEGRACIONES.md",
+      "bytes": 6437,
+      "sha256": "e373904a858a4fc3aea7e203704297d0a317b3b72b059b6b54db6eac580ce409"
+    },
+    {
+      "path": "make-payload-example.json",
+      "bytes": 353,
+      "sha256": "3d0e5f571627f3cc1ede3798270442f189af0963d70f723c20baad28b9f30af9"
+    },
+    {
+      "path": "test_ai_reports.py",
+      "bytes": 6025,
+      "sha256": "e6e7c4bf241ad2c1d265a61e939755e8ff52779c8bcf2802560e14ff20f2125a"
+    },
+    {
       "path": "server.py",
-      "bytes": 7760,
-      "sha256": "ae4ae55b567e8dbc398de3a32983b0f61d5cf7833cff2a4db7864909c5f1d12e"
+      "bytes": 8077,
+      "sha256": "193c8699c4777514f12923be1378d4e5269e5e8c3d486ca18f6f0f1ac87f68c2"
     },
     {
       "path": "processor.py",
@@ -42,8 +72,8 @@
     },
     {
       "path": "ARQUITECTURA.md",
-      "bytes": 2828,
-      "sha256": "98a06387175cc780ed511d5bca3335556ccaf992d9fcf570119de873c99d93de"
+      "bytes": 3204,
+      "sha256": "b82092c4c12d76534063367480ab17aa3d9bfd8a8b7f535dcdf17b5492a23835"
     },
     {
       "path": "INSTALAR_WINDOWS.cmd",
@@ -51,9 +81,14 @@
       "sha256": "245f9b6f2a8c323508eabfe0b8b19d5ef58b2e6312fc9d125bf126a8ba898ef2"
     },
     {
+      "path": "docs/ai-reports.js",
+      "bytes": 3549,
+      "sha256": "40d687569aa30b737e27a37804d288be713230c490bca80df9d92b1b292c43b2"
+    },
+    {
       "path": "docs/index.html",
-      "bytes": 14765,
-      "sha256": "71684781ab33f0c73828b2132ab251147d33b3162d68e4bc1c70e63701a24192"
+      "bytes": 15492,
+      "sha256": "2a1d4e9fdb56b2d612002f1824486de18d83ec05b2bcb921e891ee311ec9e9d2"
     },
     {
       "path": "docs/comparison.js",
@@ -62,8 +97,8 @@
     },
     {
       "path": "docs/platform.js",
-      "bytes": 13386,
-      "sha256": "81d97118df2d640d8a453f325430fd6518a09ccd90d00ff8cc38b012f92d7543"
+      "bytes": 13608,
+      "sha256": "50f825c9fbf13a458cc107a4762b0973b91eb9ad75fbf33cb831bc6910be6c1f"
     },
     {
       "path": "docs/platform.css",
@@ -117,14 +152,14 @@
     },
     {
       "path": "README.md",
-      "bytes": 4476,
-      "sha256": "01e49f756c2944aa0cb608f8bf3afff3f4c9eb4021da6aa97acaa945dbe612d5"
+      "bytes": 4830,
+      "sha256": "90fa2838d548021a6277b8da8dd50d7da879bb6b6a94fc4ab86998284fdbbd3c"
     },
     {
       "path": ".gitignore",
-      "bytes": 146,
-      "sha256": "6f81e055a475396ebb2d50f495dbd08030466e61d49e7436497fcc42c91ce036"
+      "bytes": 185,
+      "sha256": "104e99247916b6c8db5eca8a5e1374096075ccc0bb6240b3f2184ee932ff4165"
     }
   ],
-  "total_bytes": 285947
+  "total_bytes": 322972
 }

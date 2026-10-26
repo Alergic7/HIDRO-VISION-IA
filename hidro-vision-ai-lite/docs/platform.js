@@ -72,6 +72,7 @@
   by('reportList').replaceChildren();reports.forEach(r=>{const a=link(r.url,'Abrir informe PDF · '+new Date(r.created).toLocaleString('es-PE'),'report-link');a.target='_blank';a.rel='noopener';by('reportList').append(a);});latestReport=reports[0]?.url||null;
   by('alertList').replaceChildren();alerts.filter(a=>rows.some(r=>r.id===a.finding)).slice(0,5).forEach(a=>by('alertList').append(node('p','Preparada, sin enviar · '+new Date(a.created).toLocaleString('es-PE'),'muted')));
  }
+ window.addEventListener('hidro:reports-updated',()=>refreshWorkflow().catch(e=>status('reportMessage',e.message,true)));
  window.addEventListener('hidro:result',e=>{active=e.detail;comparison=active.download?.match(/\/data\/([a-f0-9]{32})\//)?.[1];resetForm();if(comparison)refreshWorkflow().catch(e=>status('findingMessage',e.message,true));});
  window.addEventListener('hidro:reference',e=>{reference=e.detail;resetForm();questions();});
  window.addEventListener('DOMContentLoaded',()=>{

@@ -1,0 +1,8 @@
+{
+  "schema": "hidro-report-email-v1",
+  "event_id": "example-do-not-send",
+  "to": "alexandra.colan.7@gmail.com",
+  "subject": "HIDRO-VISION AI | Ejemplo de estructura (no enviar)",
+  "body": "Ejemplo para configurar campos de Make. No contiene un PDF real.",
+  "attachment": {"filename": "informe.pdf", "mime_type": "application/pdf", "base64": ""}
+}

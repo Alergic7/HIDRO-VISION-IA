@@ -14,7 +14,8 @@ flowchart LR
     H --> J[Informe PDF local]
     H --> K[Alerta preparada sin envío]
     I -. etapa posterior .-> L[Entrenamiento y validación del modelo]
-    K -. integración posterior .-> M[Make y destinatarios]
+    J --> N[Informe analítico OpenAI: 2 páginas]
+    N --> M[Webhook Make y correo con PDF]
 ```
 
 ## Componentes implementados
@@ -37,7 +38,7 @@ Cada hallazgo conserva comparación, progresiva, categoría, evidencia, justific
 
 El sistema está en recopilación de ejemplos supervisados. No existe un detector entrenado, una precisión medida ni un entrenamiento automático con cada carga. El siguiente ciclo requiere revisar etiquetas, separar campañas entre entrenamiento y evaluación, entrenar, medir errores y aprobar una versión antes de usar sus predicciones.
 
-El PDF usa una plantilla, sin LLM conectado. Las alertas quedan en SQLite con estado `prepared_not_sent`. No se realizan solicitudes a Make ni se envían correos. Para conectar Make posteriormente se requiere definir webhook, destinatarios, política de envío y acceso autorizado a los informes.
+El PDF local de plantilla continúa disponible. `ai_reports.py` agrega Responses API, salida estructurada y PDF de dos páginas con evidencia y contexto SENAMHI archivado. `configure_integrations.py` guarda las credenciales fuera de la carpeta web. El webhook de Make recibe el PDF en base64 para alexandra.colan.7@gmail.com, con un solo intento por informe. La recepción del webhook y la confirmación de envío se registran por separado. Requiere configurar la clave OpenAI y el escenario Make; ver INTEGRACIONES.md. Las alertas individuales del flujo anterior siguen preparadas localmente.
 
 ## Verificación
 

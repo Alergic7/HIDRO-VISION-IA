@@ -35,13 +35,13 @@ Registra un ZIP por mes y año; selecciona dos campañas para comparar. Cada ZIP
 
 El eje y progresivas deben ser compatibles entre campañas. Se admiten rectas y arcos circulares con centro. El SRT debe incluir coordenadas GPS y tiempos. Los videos deben ser decodificables por OpenCV y compatibles con el navegador; MP4 H.264 es la opción habitual.
 
-Se mantienen: comparación en planta con zoom y arrastre, ortofotos y fotogramas por progresiva, reproducción simultánea, historial, hallazgos supervisados, PDF y alertas preparadas sin envío. Los datos se guardan en `local_data/`, que se crea al iniciar.
+Se mantienen: comparación en planta con zoom y arrastre, ortofotos y fotogramas por progresiva, reproducción simultánea, historial, hallazgos supervisados, PDF local, informe IA de dos páginas y envío por Make cuando se configuran las credenciales. Los datos se guardan en `local_data/`, que se crea al iniciar.
 
 ## Qué significa «ligera»
 
 Se distribuye el código, sin videos, ortofotos, campañas privadas, bases de datos, resultados de ejemplo ni bibliotecas preinstaladas. Los archivos originales permanecen en la computadora de su propietario. El tamaño de descarga no incluye Python, las dependencias ni los ZIP que cada usuario cargará. La carga y procesamiento de ortofotos grandes siguen necesitando memoria y disco suficientes; no se ha reducido su resolución original ni eliminado el procesador.
 
-El banco de notas revisadas comienza vacío. El visor no inventa observaciones para imágenes nuevas. Los hallazgos que registre un revisor sirven como ejemplos supervisados; aún no hay un modelo de anomalías entrenado ni un LLM conectado. Make, correo y WhatsApp están sin envíos.
+El banco de notas revisadas comienza vacío. El visor no inventa observaciones para imágenes nuevas. Los hallazgos que registre un revisor sirven como ejemplos supervisados; aún no hay un modelo de anomalías entrenado. La redacción analítica usa OpenAI cuando configuras tu clave API. El envío de PDF usa Make y el destinatario alexandra.colan.7@gmail.com. Consulta [INTEGRACIONES.md](INTEGRACIONES.md) y ejecuta CONFIGURAR_IA_MAKE.cmd. Sin esas credenciales no se realizan llamadas ni envíos.
 
 ## SENAMHI
 
@@ -59,7 +59,7 @@ GitHub Pages solo sirve contenido estático: no ejecuta `server.py` ni procesa Z
 
 ```sh
 python -m pip install -r requirements-test.txt
-python -m unittest test_comparison test_platform -v
+python -m unittest test_comparison test_platform test_ai_reports -v
 ```
 
 `DISTRIBUCION.json` enumera los archivos del paquete y sus sumas SHA-256. No contiene rutas personales ni campañas del usuario.

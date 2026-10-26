@@ -6,6 +6,7 @@ import json, threading, uuid, traceback, shutil
 from processor import ROOT, STORE, load_campaign, compare
 import platform_store as workflow
 import weather_context
+import ai_reports
 
 JOBS = {}
 BUSY = threading.Lock()
@@ -39,6 +40,8 @@ class Handler(SimpleHTTPRequestHandler):
                 query=parse_qs(urlparse(self.path).query)
                 comparison=query.get('comparison',[None])[0]
                 actions={
+                    '/api/platform/integrations':ai_reports.status,
+                    '/api/platform/deliveries':lambda:ai_reports.deliveries(comparison),
                     '/api/platform/weather':lambda:weather_context.context(comparison),
                     '/api/platform/campaigns':workflow.campaigns,
                     '/api/platform/comparisons':workflow.comparisons,
@@ -100,6 +103,8 @@ class Handler(SimpleHTTPRequestHandler):
                 if not 0<length<=32768:raise ValueError('Tamaño de solicitud no válido.')
                 payload=json.loads(self.rfile.read(length))
                 actions={
+                    '/api/platform/report-ai':ai_reports.make_report,
+                    '/api/platform/report-send':ai_reports.send_report,
                     '/api/platform/campaign':workflow.update_campaign,
                     '/api/platform/finding':workflow.save_finding,
                     '/api/platform/report':lambda p:workflow.make_report(p.get('comparison')),
