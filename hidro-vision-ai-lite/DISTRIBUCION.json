@@ -1,0 +1,130 @@
+{
+  "files": [
+    {
+      "path": "server.py",
+      "bytes": 7760,
+      "sha256": "ae4ae55b567e8dbc398de3a32983b0f61d5cf7833cff2a4db7864909c5f1d12e"
+    },
+    {
+      "path": "processor.py",
+      "bytes": 15636,
+      "sha256": "ff9eae0cf54ba9ee43c6ae9a07a0d537e18383c7a33e05da20ef2ae5d924e319"
+    },
+    {
+      "path": "platform_store.py",
+      "bytes": 14190,
+      "sha256": "ce57e284163f2af134c60109c6ec7c31b73f810d4163a54c012ea3b94e4a8e94"
+    },
+    {
+      "path": "weather_context.py",
+      "bytes": 1787,
+      "sha256": "6dc74fcaf1bc3d909a3741cc1bb20518e43df547ea268ea647483984436f41e7"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 102,
+      "sha256": "e4358db42a5353e89918642fc8ca2757ead90a9815f0cbcbb4a7c17a5004204d"
+    },
+    {
+      "path": "requirements-test.txt",
+      "bytes": 32,
+      "sha256": "fcd47eee43cf6bd7c6d0dd3df6a9c448d91ea9c224246cbba139978a3ffd9b7d"
+    },
+    {
+      "path": "test_comparison.py",
+      "bytes": 4490,
+      "sha256": "9a7423a3eebc7d61db1be14f03fc3da1b91801f2374551932aaff592c0cd895b"
+    },
+    {
+      "path": "test_platform.py",
+      "bytes": 3038,
+      "sha256": "eafd75f3a8686868c4e7ba1a84bf454d29e1cf09b3422e2d448c73df05bf904c"
+    },
+    {
+      "path": "ARQUITECTURA.md",
+      "bytes": 2828,
+      "sha256": "98a06387175cc780ed511d5bca3335556ccaf992d9fcf570119de873c99d93de"
+    },
+    {
+      "path": "INSTALAR_WINDOWS.cmd",
+      "bytes": 745,
+      "sha256": "245f9b6f2a8c323508eabfe0b8b19d5ef58b2e6312fc9d125bf126a8ba898ef2"
+    },
+    {
+      "path": "docs/index.html",
+      "bytes": 14765,
+      "sha256": "71684781ab33f0c73828b2132ab251147d33b3162d68e4bc1c70e63701a24192"
+    },
+    {
+      "path": "docs/comparison.js",
+      "bytes": 12629,
+      "sha256": "12a837f2b118ccd86b6a5777a6cab7a344f746433339177b74a15d5f51cc8eb8"
+    },
+    {
+      "path": "docs/platform.js",
+      "bytes": 13386,
+      "sha256": "81d97118df2d640d8a453f325430fd6518a09ccd90d00ff8cc38b012f92d7543"
+    },
+    {
+      "path": "docs/platform.css",
+      "bytes": 7665,
+      "sha256": "e407a4b68f3e42e46116622d824aabedfb9ffea7c5226b3ba0962c87e39d5970"
+    },
+    {
+      "path": "docs/zoom.js",
+      "bytes": 3735,
+      "sha256": "bd1e82908524e0b03cbd3a35423d52ac58a3fb865d5566cfc1ae6b5421bc279f"
+    },
+    {
+      "path": "docs/meteorologia.js",
+      "bytes": 3207,
+      "sha256": "892ce0cf36526d99367951d443aedb82f5df531ab007e6dff43de3f07725e298"
+    },
+    {
+      "path": "docs/.nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/evidencias/estaciones-senamhi.json",
+      "bytes": 119805,
+      "sha256": "9abbe198fa00866a48b6d4ed2f80846f3dea4b8c3687261303b8c256d02e5dce"
+    },
+    {
+      "path": "docs/evidencias/precipitacion-resumen.json",
+      "bytes": 391,
+      "sha256": "2ae6cf7127484e4c6aeb0dd352cf59f60b55fb7a7408ffd4d9c34f71d0b07bdd"
+    },
+    {
+      "path": "docs/evidencias/senamhi-113249-202601.tsv",
+      "bytes": 27458,
+      "sha256": "f570dc83c017cc47b1ecacad495a2ce994d5a3b618304c1611b40753b9c22f88"
+    },
+    {
+      "path": "docs/evidencias/senamhi-113249-202607.tsv",
+      "bytes": 27365,
+      "sha256": "de9448baf4c96f0b1fd4735987c9c7e04cb6d405b9540cddae91680d6ba3ed73"
+    },
+    {
+      "path": "docs/observations.json",
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    {
+      "path": "INICIAR_HIDRO_VISION.cmd",
+      "bytes": 308,
+      "sha256": "19c50ea64cb8fd98176da41cb0184d0dd68b06627bfde79306d8952604015293"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4476,
+      "sha256": "01e49f756c2944aa0cb608f8bf3afff3f4c9eb4021da6aa97acaa945dbe612d5"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 146,
+      "sha256": "6f81e055a475396ebb2d50f495dbd08030466e61d49e7436497fcc42c91ce036"
+    }
+  ],
+  "total_bytes": 285947
+}
